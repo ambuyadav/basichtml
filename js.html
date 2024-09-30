@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSHTML</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .b1 {
+            display: block;
+        }
+
+        .b2 {
+            display: none;
+        }
+
+        .b3 {
+            display: none;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .b1 {
+                display: none;
+            }
+
+            .b2 {
+                display: block;
+            }
+
+            .b3 {
+                display: none;
+            }
+
+            body {
+                background-color: green;
+
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .b1 {
+                display: none;
+            }
+
+            .b2 {
+                display: none;
+            }
+
+            .b3 {
+                display: block;
+            }
+
+            body {
+                background-color: blue;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img class="b1" width="30%" src="pictures/ansh5.jpg">
+    <h1 class="b1">AMBUJ YADAV <br>VILL.SAIDPUR <br>DIST.GHAZIPUR </h1>
+    <img class="b2" width="30%" src="pictures/ansh4.jpg">
+    <h1 class="b2"> anshu yadav <br> vill. saidpur <br>dist. ghazipur</h1>
+    <img class="b3" width="30%" src="pictures/ansh6.jpg">
+    <h1 class="b3"> shyam prakash yadav <br>vill.saidpur <br>dist.ghazipur</h1>
+
+
+</body>
+
+</html>

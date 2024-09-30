@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    @media screen and (orientation: portrait) {
-  
-}
-@media screen and (orientation: landscape) {
-  
-}
-@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
-  
-}
+        @media screen and (orientation: portrait) {
+            .b1 {
+                display: block;
+            }
+
+            .b2 {
+                display: none;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            .b1 {
+                display: none;
+            }
+
+            .b2 {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {}
     </style>
 </head>
+
 <body>
-    <h1> ambuj yadav <br>
-        vill. ghazipur 
+    <h1 class="b1"> Ambuj Yadav <br>
+        vill. Ghazipur
     </h1>
-<img width="30%" src="pictures/AMBUJ2.jpg">
-<a target="new" href="midiaquriy.html">Media Query</a>
-
-
-
-
-
+    <img class="b2" width="30%" src="pictures/AMBUJ2.jpg">
+    <a target="new" href="midiaquriy.html">Media Query</a>
 </body>
+
 </html>
