@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .col-container {
+
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: space-between;
+        }
+
+        div {
+            border-style: ridge;
+        }
+
+        .row-container {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-container">
+        <div class="row-container">
+
+            <div style="flex: 5;">
+                Two
+            </div>
+            <div>
+                Three
+            </div>
+            <div>
+                Four
+            </div>
+
+        </div>
+
+
+        <div class="row-container">
+
+            <div>
+                Two
+            </div>
+            <div>
+                Three
+            </div>
+            <div>
+                Four
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container and Flex Items</title>
+    <style>
+.row-contener{
+          display: flex;
+       background-color: rgb(131, 138, 73);
+      border: 5px solid gray;
+       justify-content: center;
+
+
+}
+
+.col-contener{
+             display: flex;
+            background-color: gray;
+        border:  5px solid;
+
+}
+.item1{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+border-style: groove;
+border-color: teal;
+border-width: 1cm;
+}
+.item2{
+    display: flex;
+padding: 10px;
+margin:5px;
+border-style: ridge;
+border-color: tan;
+border-width: 1cm;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="row-contener" style="flex-wrap: wrap;">
+<div class="item1" >  Items1</div>
+<div class="item2"> Items2</div>
+<div class="item1"> Items3</div>
+<div class="item2"> Items4</div>
+<div class="item1"> items5</div>
+
+
+
+
+</div>
+
+</body>
+</html>
