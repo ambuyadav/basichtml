@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textjs</title>
+</head>
+<body>
+  N1  <input value="15" id="n1" type="number"><br>
+N2 <input value="11" id="n2" type="number"> 
+<br>
+<input type="button" value="Add" onclick="add()">
+<input type="button" value="Substract" onclick="add2()">
+<input type="button" value="multiply" onclick="add3()">
+<input type="button" value="divide" onclick="add4()">
+<br>
+Result <h1  id="result"></h1>
+
+<script>
+console.log("radhe")
+function add4()
+{
+console.log("bilive it");
+let txt1=document.getElementById("n1");
+let txt2=document.getElementById("n2");
+let textresult=document.getElementById("result");
+textresult.innerText=Number(txt1.value)/ Number(txt2.value);
+}
+
+console.log("hello");
+function add3()
+{console.log("I am right");
+ let txt1=document.getElementById("n1");
+let txt2=document.getElementById("n2");
+let textresult=document.getElementById("result");
+textresult.innerText=Number(txt1.value)* Number(txt2.value);
+
+}
+console.log("hii");
+function add2()
+{
+    console.log("i am fine");
+    let txt1=document.getElementById("n1");
+    let txt2=document.getElementById("n2");
+    let textresult=document.getElementById("result");
+    textresult.innerText=Number(txt1.value)-Number(txt2.value);
+}
+
+
+
+// alert("Hello");
+console.log("Hello");
+function add()
+{
+// console.log(" I was clicked");
+let txt1=document.getElementById("n1");
+// console.log(txt1,txt1.value);
+let txt2=document.getElementById("n2");
+// console.log(txt2,txt2.value);
+// txt1.value=100;
+
+let txtresult=document.getElementById("result");
+// txtresult.value=Number(txt1.value )+ Number(txt2.value);
+txtresult.innerText=Number(txt1.value )+ Number(txt2.value);
+
+}
+
+
+
+</script>
+</body>
+</html>
