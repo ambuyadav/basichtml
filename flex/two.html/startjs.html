@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javasript</title>
+</head>
+
+<body>
+  a1 <input type="number" id="a1"><br>
+  a2<input type="number" id="a2"><br>
+  <label><input type="radio" id="ad" name="option" onclick="add()">Add</label>
+  <label><input type="radio" id="sub" name="option" onclick="sub()">Sub</label>
+  <label><input type="radio" id="Mul" name="option" onclick="mul()">Mul</label>
+  <label><input type="radio" id="div" name="option" onclick="div()">Div</label>
+
+
+  <br>
+  result <h1 id="result"></h1>
+
+
+  <label><input type="radio" id="ad" value="add" name="optio">Add</label>
+  <label><input type="radio" id="sub" value="sub" name="optio">Sub</label>
+  <label><input type="radio" id="Mul" value="mul" name="optio">Mul</label>
+  <label><input type="radio" id="div" value="div" name="optio">Div</label>
+  <br>
+  <input type="button" value="Calculate" onclick="f()">
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    console.log("hello")
+    function f() {
+      let result="No radio selected";
+      let selectedradio=0;
+      let allradio = document.getElementsByName("optio");
+      // console.log(allradio[0].checked);
+      // console.log(allradio.length);
+
+      let a =Number (document.getElementById("a1").value);
+      let b =Number (document.getElementById("a2").value);
+      let textresult = document.getElementById("result");
+
+      for (let i=0;i<=3;i++) {
+        let radio=allradio[i];
+        if(radio.checked)
+        selectedradio=radio.value;
+        console.log(radio);
+      }
+      if(selectedradio=="add")
+result=a+b;
+if(selectedradio=="sub")
+result=a-b;
+      console.log(selectedradio);
+      textresult.innerHTML=result;
+
+
+    }
+    function sub() {
+      console.log("go");
+      let txt1 = document.getElementById("a1");
+      let txt2 = document.getElementById("a2");
+      let textresult = document.getElementById("result");
+      textresult.innerText = Number(txt1.value) - Number(txt2.value);
+
+    }
+
+    console.log("hii")
+    function mul() {
+      console.log("go");
+      let txt1 = document.getElementById("a1");
+      let txt2 = document.getElementById("a2");
+      let textresult = document.getElementById("result");
+      textresult.innerText = Number(txt1.value) * Number(txt2.value);
+    }
+
+    console.log("hii")
+    function div() {
+      console.log("go");
+      let txt1 = document.getElementById("a1");
+      let txt2 = document.getElementById("a2");
+      let textresult = document.getElementById("result");
+      textresult.innerText = Number(txt1.value) / Number(txt2.value);
+    }
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

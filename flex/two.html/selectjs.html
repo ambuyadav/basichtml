@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+
+
+
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <h1>Calculate </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>A <input type="number" name="number" id="a1"><br></td>
+            </tr>
+            <tr>
+                <td> B <input type="number" id="a2"><br></td>
+            </tr>
+            <tr>
+                <td> <select id="option" onchange="f(event)">
+                        <option value="ADD"> ADD</option>
+                        <option value="SUB"> SUB</option>
+                        <option value="MUL"> MUL</option>
+                        <OPtion value="DIV"> DIV</OPtion>
+                    </select></td>
+            </tr><br>
+            <tr>
+                <td><input type="button" value="answer" onclick="f()"> </td>
+            </tr><br>
+            <tr>
+                <td> result <h1 id="result"></h1>
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+    <script>
+        let opt = document.getElementById("option");
+
+        function f() {
+            let result="";
+            
+        let A =Number (document.getElementById("a1").value);
+      let B =Number (document.getElementById("a2").value);
+            console.log(opt);
+            console.log(A,B);
+            console.log(opt.value);
+            
+            if(opt.value=="ADD")
+            result=A+B;
+          if(opt.value=="SUB")
+            result=A-B;
+
+           if(opt.value=="MUL")
+             result=A*B;
+            if(opt.value=="DIV")
+             result=A/B;
+            textresult.innerHTML=result;
+
+        }
+      let textresult = document.getElementById("result");
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
