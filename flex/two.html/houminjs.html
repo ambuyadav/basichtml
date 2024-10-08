@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>hour and minute</h1>
+        h <input type="number" id="a1"><br>
+        m <input type="number" id="a2"><br>
+        <input type="button" value="timer" onclick="am()">
+        <h1 id="result"></h1>
+    </center>
+    <script>
+
+        console.log("hello")
+        function am() {
+
+            let hour = Number(document.getElementById("a1").value);
+            // console.log(a)
+            let minute = Number(document.getElementById("a2").value);
+            // console.log(b)
+            let greeting = "";
+            if(hour<0 || hour>23)
+            {
+                greeting="";
+            }
+            if (hour <= 11 && minute <= 59) {
+                greeting = "good morning";
+            }
+            else
+                if (hour <= 16 && minute <= 59) {
+                    greeting = "good afternoon";
+                }
+                else
+                if(hour<= 23 && minute<=59 )
+                {
+                    greeting = "good evning"
+                }
+
+            let textresult = document.getElementById("result");
+            textresult.innerHTML = greeting;
+
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

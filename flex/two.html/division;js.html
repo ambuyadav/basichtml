@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1> EXAM RESULT</h1>
+        <input type="number" id="a1">
+        <input type="button" value="result" onclick="add()"><br>
+
+        <h1 id="result">result</h1>
+    </center>
+    <script>
+        console.log("result")
+        function add() {
+            let textresult = document.getElementById("result");
+            let marks = Number(document.getElementById("a1").value);
+            let greeting = "";
+        
+            if (marks < 0 || marks > 100)
+            {
+
+                textresult.innerText = "Error";
+                return;
+            }
+            if(marks<=39){
+
+                greeting="fail"
+            } 
+            else
+            if (marks < 50) {
+
+                greeting = "third division";
+            }
+            else
+                if (marks < 60) {
+
+                    greeting = "secenod division";
+                }
+                else
+                    if (marks < 100) {
+
+                        greeting = "first division";
+                    }
+
+
+
+
+
+
+            textresult.innerHTML = greeting;
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

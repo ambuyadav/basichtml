@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>         
+<body>
+<center>
+
+<table>
+<tr><td colspan="2"> <center><h1>Computer</h1></center></td></tr>
+
+<tr><td><select  id="computer" onchange="f(event)">
+<option value="lenovo"> lenovo</option>    
+<option value="hp"> hp</option>
+<option value="dell">dell</option></select></td>
+<td> 
+    <select id="freegift" onchange="d(event)">
+    <option value="microphone"> microphone </option>
+<option value="headphone">  headphone</option>
+<option value="speekar">  speekar </option>
+</select>
+
+<input type="button" onclick="f()">
+</td></tr>
+
+</table>
+</center>
+<script>  
+
+    function f()
+{ 
+    let cmp=document.getElementById("computer").value;
+    console.log(cmp);
+  
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

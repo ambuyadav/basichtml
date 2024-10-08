@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>3 maximum value </h1>
+
+        a1 <input type="number" id="a1"><br>
+        a2 <input type="number" id="a2"><br>
+        a3<input type="number" id="a3"><br>
+        <input type="button" value="Find Max" onclick="findMax ()"><br>
+        <input type="button" value="find min" onclick="findMin()">
+        <h1>result</h1>
+        <h1 id="result">
+        </h1><br>
+    </center>
+    <script>
+        // "1"  1
+        console.log("hello")
+        function findMax() {
+            // console.log("amsd");//
+            let a = Number(document.getElementById("a1").value);
+            console.log(a);
+            let b = Number(document.getElementById("a2").value);
+            console.log(b);
+            let c =Number( document.getElementById("a3").value);
+            console.log(c);
+            let maxvalue = "";
+            if (a >= b) {
+                maxvalue = a;
+            }
+            else {
+                maxvalue = b;
+            }
+
+            if (c > maxvalue)
+                maxvalue = c;
+             
+                let textresult = document.getElementById("result");
+            textresult.innerText = maxvalue;
+           
+            //   textresult.innerText = Number(txt1.value) + Number(txt2.value) + Number(txt3.value);
+        }
+
+        console.log("hello")
+        function findMin() {
+            // console.log("amsd");//
+            let a = Number(document.getElementById("a1").value);
+            console.log(a);
+            let b = Number(document.getElementById("a2").value);
+            console.log(b);
+            let c =Number( document.getElementById("a3").value);
+            console.log(c);
+            let minvalue=""; 
+            if (a <= b)   {
+                minvalue =  a;
+            }
+
+             else {
+                minvalue= b;
+             }
+
+             if( c < minvalue) {
+                minvalue= c;
+             }
+
+
+            let textresult = document.getElementById("result");
+            textresult.innerText = minvalue;
+           
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
