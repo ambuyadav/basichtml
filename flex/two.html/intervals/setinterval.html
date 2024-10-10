@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed loop</title>
+</head>
+<body>
+    <center>
+     <h1 id="am"></h1><br>
+      <input type="button" value="timer" onclick="runTimer()">  
+
+    </center>
+<script>
+let value=1;
+let txt =document.getElementById("am");
+// console.log("hello");
+function runTimer()
+{
+
+//     let txt =document.getElementById("am");
+ txt.innerHTML=value;
+
+console.log(value);
+value=value+1;
+}
+
+setInterval("runtimer()",1000);
+
+</script>
+
+</body>
+</html>

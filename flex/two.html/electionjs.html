@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Election Vote</h1>
+        <input type="radio" id="bjp" value="bjp" name="ap"> BJP
+        <input type="radio" id="app" value="aap" name="ap"> AAP
+        <input type="radio" id="sp" value="sp" name="ap"> SP
+        <input type="radio" id="bsp" value="bsp" name="ap"> BSP <br>
+        <input type="button" value="Vote" onclick="processVote()">
+        <input type="button" value="output" onclick="radha()">
+         <h1 id="result"> RESULT</h1> 
+         
+
+
+    </center>
+    <script>
+        let bjp=0,sp=0,aap=0,bsp=0;
+        function processVote() {
+            console.log("Clicked");
+            let selectedradio = "not selected";
+
+
+
+            let allradio = document.getElementsByName("ap");
+            // console.log(allradio);
+            for (let i = 0; i <= 3; i++) {
+                let radio = allradio[i];
+                if (radio.checked)
+                    selectedradio = radio.value;
+                // console.log(radio);
+            }
+             console.log(selectedradio);
+            //  console.log(selectedradio.value);?
+             if(selectedradio=="aap")
+             {
+                aap=aap+1;
+                console.log(aap);
+             }
+            if(selectedradio=="bjp")
+             {
+                 bjp=bjp+1;
+                  console.log(bjp);
+             }
+             if(selectedradio=="sp")
+             {
+                sp=sp+1;
+                console.log(sp);
+             }
+            if(selectedradio=="bsp")
+               {
+               bsp=bsp+1
+               console.log(bsp);
+
+               }
+            }
+               function radha(){
+                console.log("radha");
+                let textresult=document.getElementById("result");
+
+                
+                
+                
+                textresult.innerHTML="BJP"+ bjp+"aap"+aap+"sp"+sp+"bsp"+bsp;
+                
+               }
+
+
+ 
+            
+           
+
+    
+
+    </script>
+</body>
+
+</html>

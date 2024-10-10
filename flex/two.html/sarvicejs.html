@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Grocery Items</h1>
+        <SELect id="gr" onchange="g(event)">
+
+            <OPtion value="arahar dal 160"> ARAHAR DAL </OPtion>
+            <option value="musatard oil 140">MUSATARD OIL</OPtion>
+            <OPTion value="refiend oil 120">REFIEND OIL</OPTion>
+            <OPtion value="chinee 40"> CHINEE</OPtion>
+            <Option value="shof 800">SHOF</Option>
+            <OPTion value="gram mashala 1000">GRAM MASHALA</OPTion>
+            <OPTIon value="horlicks 360">HORLICKS</OPTIon>
+            <OPTIon value="jeera 600" >JEERA</OPTIon>
+            <OPTIon value="olive oil  260    ">OLIVE OIL</OPTIon>
+        </SELect>
+       
+       
+        <input type="button" value="Rate" onclick="ra()"><br>
+       rate <input type="text"  placeholder="mrp" id="mp">
+    </center>
+
+    <script>
+        console.log("hello")
+        function ra() {
+            console.log("hello");
+
+            let txt = document.getElementById("gr");
+            let mrp = document.getElementById("mp");
+
+              let  rate=txt.value;
+              mp.value=rate;
+            // alert(rate);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

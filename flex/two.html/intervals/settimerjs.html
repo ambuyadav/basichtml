@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set timer</title>
+</head>
+
+<body>
+    <center>
+        <h1 id="set">page</h1>
+
+        <div id="di"> HELLO BANARASH</div>
+        <input type="button" value="timer" onclick="settimer()">
+
+    </center>
+
+    <script>
+        let value = 1;
+        let txt = document.getElementById("set");
+
+        setTimeout('txt.textContent="Hello";', 5000);
+        //  txt.textContent="Hello";
+
+        let value2 = 1;
+        let txt2 = document.getElementById("di");
+
+function f1()
+{
+    txt2.innerHTML = "<h1>hello banaras</h1>";
+}
+
+        setTimeout("f1()", 1000);
+
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

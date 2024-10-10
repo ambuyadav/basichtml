@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+
+<body>
+    <center>
+        <h1 id="timer"></h1>
+        <input type="button" id="bttn" value="Start" onclick="timerControl()">
+
+    </center>
+    <script>
+
+        let value = 0;
+        let bttn = document.getElementById("bttn");
+
+        let txt = document.getElementById("timer");
+
+
+        function timerControl() {
+            if (bttn.value == "Start") {
+                t = setInterval("runtimer()", 1000);
+                bttn.value = "Stop";
+            }
+            else {
+                clearInterval(t);
+                value = 0;
+                bttn.value = "Start";
+                
+            }
+        }
+
+        function runtimer() {
+            txt.innerHTML = value;
+
+            console.log(value);
+            value = value + 1;
+
+        }
+           
+
+
+
+    </script>
+
+</body>
+
+</html>

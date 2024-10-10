@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photos js</title>
+</head>
+
+<body>
+    <center>
+
+        <img src="../intervals/n1.jpg" id="na1">
+        <img src="../intervals/n2.jpg" id="na2">
+        <img src="../intervals/n3.jpg" id="na3">
+        <img src="../intervals/n4.jpg" id="na0"> <br>
+        <input type="button" value="start" onclick="slider( )">
+    </center>
+
+    <script>
+    
+        function slider() {
+        let t=   document.getElementById("na0").src;
+        document.getElementById("na0").src=document.getElementById("na1").src;
+        document.getElementById("na1").src=document.getElementById("na2").src;
+        document.getElementById("na2").src=document.getElementById("na3").src;
+        document.getElementById("na3").src=t;
+        }
+
+
+
+
+setInterval("slider()",3000);
+
+
+    </script>
+</body>
+
+</html>

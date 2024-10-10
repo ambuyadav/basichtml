@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tt">reverstimer</title>
+</head>
+
+<body>
+    <center>
+        <h1 id="timer">timer</h1>
+        <input type="button" value="Start" onclick="fwd()">
+        <input type="button" value="revers" onclick="rev()">
+
+        <input type="button" value="Toggle" onclick="toggle()">
+
+    </center>
+    <script>
+        let step = 1;
+        let value = 0;
+        let txt = document.getElementById("timer");
+        let ttl = document.getElementById("tt");
+
+        function toggle() {
+            step = -step;
+            ttl.innerText = step;
+        }
+
+
+        function fwd() {
+            step = 1;
+        }
+        function rev() {
+            step = -1;
+        }
+
+        function runtimer() {
+            txt.innerHTML = value;
+
+            console.log(value);
+            value = value + step;
+
+        }
+        setInterval("runtimer()", 1000);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
