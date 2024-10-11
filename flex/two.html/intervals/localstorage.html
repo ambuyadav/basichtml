@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of Local Storage</title>
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <tr>
+                <th colspan="3">Local Storage</th>
+            </tr>
+            <tr>
+                <td>Data to save</td>
+                <td></td>
+                <td>Recovered Data</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="ds"></td>
+                <td></td>
+                <td>
+                    <p id="dr"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="save()">Save</button></td>
+                <td><button onclick="remove()">Remove</button>
+                <td><button onclick="retrieve()">Retrieve</button></td>
+            </tr>
+
+        </table>
+
+    </center>
+    <script>
+        let txt = document.getElementById("ds");
+        let p = document.getElementById("dr");
+        function save() {
+            console.log("save");
+            let value = txt.value;
+            localStorage.setItem("price", value);
+
+        }
+        function remove() {
+            console.log("remove");
+            localStorage.removeItem("price");
+        }
+        function retrieve() {
+            console.log("retrieve");
+            let value = localStorage.getItem("price");
+            p.innerHTML = value;
+            txt.value=value;
+        }
+
+retrieve();
+
+
+
+
+    </script>
+</body>
+
+</html>

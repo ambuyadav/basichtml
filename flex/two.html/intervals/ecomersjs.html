@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <tr>
+                <td colspan="3">
+                    <h1>
+                        <center>ABC .SHOPING. APP.</center>
+                    </h1>
+                <td><img width="30px" src="../intervals/sc1.png" alt=""></td>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="../intervals/n1.jpg">
+                    <h3>apple</h3><input type="number" id="ap">
+                </td>
+                <td><img src="../intervals/n2.jpg">
+                    <h3>banana</h3><input type="number">
+                </td>
+                <td><img src="../intervals/n3.jpg">
+                    <h3>orang</h3><input type="number">
+                </td>
+                <td><img src="../intervals/n4.jpg">
+                    <h3>graips</h3><input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="s('apple')">Save</button> <button onclick="re()">remove</button>
+                    <button onclick="rat()">retrieve</button></td>
+                <td><button onclick="s('banana')">Save</button> <button onclick="rem()">remove</button>
+                    <button onclick="ret()">retrieve</button></td>
+                <td> <button onclick="s('orange')">Save</button> <button onclick="remo()">remove</button>
+                    <button onclick="re()">retrieve</button></td>
+                <td> <button onclick="s('grapes')">Save</button> <button onclick="remov()">remove</button>
+                    <button onclick="createItem() ">retrieve</button></td>
+            </tr>
+
+        </table>
+    </center>
+    <script>
+        let data = "{}";
+
+        let value = 1;
+                      function rat(){
+                      let item='{"name:apple,quntity:1kg, price:100"}';
+                        console.log(item)
+
+                      }
+                 function ret(){
+                          let item='{"name:banana,quntity:1kg,price:100"}';
+                       console.log(item)
+                 }
+            function re(){
+                 let item='{"name":"orange,quntity:1kg, price:100"}';
+                 console.log(item)
+            }
+
+        function createItem()
+        {
+            let productname="Ball";
+            let price=100;
+            let quntity=1;
+            let item=`{"name":"${productname}", quntity:${quntity}, price":${price}}`;
+            // let item='{"name":"graeps", quntity:1kg, price":100}';
+            console.log(item);
+            
+            
+        }
+        function s(name) {
+            
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
